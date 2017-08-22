@@ -1,0 +1,139 @@
+{
+  "edges": [
+    {
+      "id": "1",
+      "label": "REAL", 
+      "relationship": "friend", 
+      "source": "a", 
+      "target": "b"
+    }, 
+    {
+      "id": "2",
+      "label": "FAKE", 
+      "relationship": "follow", 
+      "source": "b", 
+      "target": "c"
+    }, 
+    {
+      "id": "3",
+      "label": "REAL", 
+      "relationship": "follow", 
+      "source": "c", 
+      "target": "d"
+    }, 
+    {
+      "id": "4",
+      "label": "FAKE", 
+      "relationship": "follow", 
+      "source": "f", 
+      "target": "c"
+    }, 
+    {
+      "id": "5",
+      "label": "REAL", 
+      "relationship": "follow", 
+      "source": "e", 
+      "target": "f"
+    }, 
+    {
+      "id": "6",
+      "label": "REAL", 
+      "relationship": "friend", 
+      "source": "e", 
+      "target": "d"
+    }, 
+    {
+      "id": "7",
+      "label": "REAL", 
+      "relationship": "friend", 
+      "source": "d", 
+      "target": "g"
+    }, 
+    {
+      "id": "8",
+      "label": "FAKE", 
+      "relationship": "friend", 
+      "source": "a", 
+      "target": "g"
+    }, 
+    {
+      "id": "9",
+      "label": "REAL", 
+      "relationship": "friend", 
+      "source": "c", 
+      "target": "a"
+    }, 
+    {
+      "id": "10",
+      "label": "REAL", 
+      "relationship": "follow", 
+      "source": "e", 
+      "target": "a"
+    }, 
+    {
+      "id": "11",
+      "label": "_", 
+      "relationship": "friend", 
+      "source": "a", 
+      "target": "e"
+    }, 
+    {
+      "id": "12",
+      "label": "FAKE", 
+      "relationship": "follow", 
+      "source": "g", 
+      "target": "b"
+    }
+  ], 
+  "nodes": [
+    { 
+      "id": "a",
+      "age": "34", 
+      "label": "FEMALE", 
+      "name": "Alice", 
+      "size": 100
+    }, 
+    { 
+      "id": "b",
+      "age": "36", 
+      "label": "MALE", 
+      "name": "Bob", 
+      "size": 100
+    }, 
+    { 
+      "id": "c",
+      "age": "36", 
+      "label": "FEMALE", 
+      "name": "Charlie", 
+      "size": 100
+    }, 
+    { 
+      "id": "d",
+      "age": "36", 
+      "label": "MALE", 
+      "name": "David", 
+      "size": 100
+    }, 
+    { 
+      "id": "e",
+      "age": "36", 
+      "label": "_", 
+      "name": "Esther", 
+      "size": 100
+    }, 
+    { 
+      "id": "f",
+      "age": "36", 
+      "label": "FEMALE", 
+      "name": "Fanny", 
+      "size": 100
+    }, 
+    { 
+      "id": "g",
+      "age": "36", 
+      "label": "MALE", 
+      "name": "Gabby", 
+      "size": 100
+    }
+  ]
+}

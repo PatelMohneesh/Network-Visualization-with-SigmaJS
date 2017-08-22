@@ -1,0 +1,132 @@
+{
+  "edges": [
+    {
+      "id": "3",
+      "source": "a",
+      "target": "b",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "4",
+      "source": "a",
+      "target": "e",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "5",
+      "source": "a",
+      "target": "g",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "6",
+      "source": "b",
+      "target": "c",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "7",
+      "source": "c",
+      "target": "a",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "8",
+      "source": "c",
+      "target": "d",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "9",
+      "source": "d",
+      "target": "g",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "10",
+      "source": "e",
+      "target": "a",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "11",
+      "source": "e",
+      "target": "d",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "12",
+      "source": "e",
+      "target": "f",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "13",
+      "source": "f",
+      "target": "c",
+      "relationship": "friend",
+      "label": "PERSON"
+    },
+    {
+      "id": "16",
+      "source": "g",
+      "target": "b",
+      "relationship": "friend",
+      "label": "PERSON"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "b",
+      "label": "Node 1",
+      "size": 100,
+      "name": "Mohneesh"
+    },
+    {
+      "id": "d",
+      "label": "Node 2",
+      "size": 100,
+      "name": "Mohneesh"
+    },
+    {
+      "id": "g",
+      "label": "Node 3",
+      "size": 100,
+      "name": "Mohneesh"
+    },
+    {
+      "id": "e",
+      "label": "Node 4",
+      "size": 100,
+      "name": "Mohneesh"
+    },
+    {
+      "id": "a",
+      "label": "Node 5",
+      "size": 100,
+      "name": "Mohneesh"
+    },
+    {
+      "id": "c",
+      "label": "Node 6",
+      "size": 100,
+      "name": "Mohneesh"
+    },
+    {
+      "id": "f",
+      "label": "Node 7",
+      "size": 100,
+      "name": "Mohneesh"
+    }
+  ]
+}
