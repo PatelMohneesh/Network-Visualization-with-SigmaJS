@@ -1,8 +1,14 @@
+body {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0px 60px;
+}
+
 #network-graph{
    top: 0;
    bottom: 0;
    left: 0;
    right: 0;
    position: absolute;
-   background-color: #87CEFA;
+   background-color: #FFF;
  }
