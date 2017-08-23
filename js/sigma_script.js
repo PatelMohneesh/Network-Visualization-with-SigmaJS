@@ -1,7 +1,7 @@
 var i,
     s,
-    N = 30,
-    E = 100,
+    N = 500,
+    E = 2000,
     g = {
       nodes: [],
       edges: []
@@ -53,7 +53,7 @@ for (i = 0; i < N; i++)
     label: label_list[cIndex = ++cIndex % label_list.length],
     x: Math.random(),
     y: Math.random(),
-    size: 100,
+    size: 10,
     color: Objectget(label_list[cIndex = ++cIndex % label_list.length])
   });
 
@@ -100,8 +100,6 @@ s = new sigma({
       edgeHoverSizeRatio: 1,
       edgeHoverExtremities: true,
 
-
-      
   }
 });
 
@@ -134,9 +132,26 @@ dragListener.bind('dragend', function(event) {
 // Bind the events:
 s.bind('overNode outNode clickNode doubleClickNode rightClickNode', function(e) {
   console.log(e.type,e.data.node, e.data.node.label, e.data.captor);
+  document.getElementById("output1").innerHTML = 'Node Properties:  ID - '+ e.data.node.id  +
+  ' Label - ' + e.data.node.label  +
+  ' Size - ' + e.data.node.size +
+  ' Color - ' + e.data.node.color; // +
+  //' Node x-position - ' + e.data.node.x +
+  //' Node y=position - ' + e.data.node.y;
+
 });
 s.bind('overEdge outEdge clickEdge doubleClickEdge rightClickEdge', function(e) {
   console.log(e.type, e.data.edge, e.data.captor);
+  document.getElementById("output2").innerHTML =('Edge Propoerties:  ID - '+ e.data.edge.id  +
+  ' Label - ' + e.data.edge.label  +
+  ' Source - ' + e.data.edge.source +
+  ' Target - ' + e.data.edge.target  +
+  ' Size - ' + e.data.edge.size +
+  ' type - ' + e.data.edge.type); // +
+  //' Node x-position - ' + e.data.node.x +
+  //' Node y=position - ' + e.data.node.y;
+
+
 });
 s.bind('clickStage', function(e) {
   console.log(e.type, e.data.captor);
@@ -144,3 +159,13 @@ s.bind('clickStage', function(e) {
 s.bind('doubleClickStage rightClickStage', function(e) {
   console.log(e.type, e.data.captor);
 });
+
+var db = new sigma.plugins.neighborhoods();
+db.load('path/to/my/graph.json', function() {
+  var nodeId = 'anyNodeID';
+  mySigmaInstance
+    .read(db.neighborhood(nodeId))
+    .refresh();
+});
+ 
+
