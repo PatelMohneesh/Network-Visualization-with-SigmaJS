@@ -1,7 +1,7 @@
 var i,
     s,
-    N = 500,
-    E = 2000,
+    N = 50,
+    E = 200,
     g = {
       nodes: [],
       edges: []
@@ -12,7 +12,7 @@ var i,
 //label_set.add(json["nodes"][i]["id"].toString());
 //}
 //let label_list = Array.from(label_set);
-label_list = ['COLUMBIA','GOOGLE','FACEBOOK', 'GRAPHEN', 'MICROSOFT', 'TWOSIGMA', 'UBER', 'TESLA', 'NVIDIA', 'BLOOMBERG' ]
+label_list = ['Java','Python','GO', 'C++', 'C', 'JavaScript', 'HTML', 'CSS', 'SQL', 'SCALA' ]
 
 
 //var colors = ["#e74c3c", "#c0392b", "#e67e22", "#f1c40f"];
@@ -21,6 +21,7 @@ var cIndex = 0;
 
 
 //hash map for color of nodes according to lable. 
+
 
 map = new Map(); 
 map.set(label_list[0], "#e74c3c");
@@ -53,7 +54,7 @@ for (i = 0; i < N; i++)
     label: label_list[cIndex = ++cIndex % label_list.length],
     x: Math.random(),
     y: Math.random(),
-    size: 10,
+    size: Math.random(),
     color: Objectget(label_list[cIndex = ++cIndex % label_list.length])
   });
 
@@ -160,12 +161,6 @@ s.bind('doubleClickStage rightClickStage', function(e) {
   console.log(e.type, e.data.captor);
 });
 
-var db = new sigma.plugins.neighborhoods();
-db.load('path/to/my/graph.json', function() {
-  var nodeId = 'anyNodeID';
-  mySigmaInstance
-    .read(db.neighborhood(nodeId))
-    .refresh();
-});
+
  
 
